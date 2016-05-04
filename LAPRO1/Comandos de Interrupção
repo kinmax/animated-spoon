@@ -1,0 +1,7 @@
+Comandos de Interrupção
+
+break - Pausa a execução de um bloco (um for,ou while, por exemplo) e vai para o próximo comando após o bloco
+
+return - Encerra o programa
+
+continue - pula um comando do bloco de loop (while, for)

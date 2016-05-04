@@ -1,0 +1,4 @@
+inteiro: x -> int x;
+real: x -> float x;
+literal: nome -> char[37] nome;
+lógico: x -> bool x

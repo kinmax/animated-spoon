@@ -1,0 +1,3 @@
+x = i + 1    i continua igual, x fica com o valor de i + 1
+x = i++      x fica com valor de i, i é incrementado em 1
+x = ++i      x fica com o valor de i + 1, x é incrementado em 1

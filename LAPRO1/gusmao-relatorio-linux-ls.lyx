@@ -1,0 +1,326 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Relatório Sobre o Utilitário 
+\emph on
+man
+\end_layout
+
+\begin_layout Author
+Kin Max Piamolini Gusmão(
+\begin_inset CommandInset href
+LatexCommand href
+target "kin.gusmao@acad.pucrs.br"
+type "mailto:"
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Abstract
+O comando 
+\emph on
+man
+\emph default
+ permite acesso ao manual sobre programas no sistema UNIX e derivados.
+ O manual é criado por seus programadores e integrado ao sistema operacional
+ durante a instalação do programa.
+\end_layout
+
+\begin_layout Section
+Introdução
+\end_layout
+
+\begin_layout Standard
+Neste relatório, o uso do utilitário 
+\emph on
+man
+\emph default
+ é apresentado conforme disponível no OS X da Apple.
+ São apresentadas algumas opções do comando e seu uso mais frequente.
+ O relatório é um trabalho solicitado na disciplina de Laboratório de Programaçã
+o I da Pontifícia Universidade Católica do Rio Grande do Sul.
+\end_layout
+
+\begin_layout Section
+O utilitário man
+\end_layout
+
+\begin_layout Standard
+Segundo Peek 
+\emph on
+et al
+\emph default
+.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-1"
+
+\end_inset
+
+, o sistema operacional UNIX foi um dos primeiros a incluir uma documentação
+ disponível ao usuário através do próprio sistema.
+ Antes do UNIX, o manual era impresso e entregue ao usuário.
+ Ainda segundo Peek 
+\emph on
+et al
+\emph default
+., o manual integrado está sempre atualizado, apesar de nem sempre ser o
+ melhor manual ou documentação disponível.
+ 
+\end_layout
+
+\begin_layout Standard
+Os sistemas derivados do UNIX, como o Linux, OpenBSD e OS X mantêm o comando
+ 
+\emph on
+man
+\emph default
+.
+ As páginas do man também estão disponíveis na Web 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-2"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+O utilitário 
+\emph on
+man
+\emph default
+ deriva seu nome da expressão páginas do manual (
+\emph on
+manual pages
+\emph default
+).
+ A autoria do utilitário é atribuída a John W.
+ Eaton.
+ O manual é dividido em seções, de acordo com o perfil do leitor.
+ Por exemplo, a Seção 3 contém informações úteis para programadores.
+\end_layout
+
+\begin_layout Standard
+O formato do comando é:
+\end_layout
+
+\begin_layout LyX-Code
+$ man 
+\emph on
+seção
+\emph default
+ 
+\emph on
+tópico
+\end_layout
+
+\begin_layout Standard
+As páginas são organizadas por tópico.
+ A consulta mais simples é:
+\end_layout
+
+\begin_layout LyX-Code
+$ man man
+\end_layout
+
+\begin_layout Standard
+Que resulta em uma página com um manual sobre o 
+\emph on
+man
+\emph default
+.
+ Nesta consulta não foi indicada uma seção.
+ Durante a consulta, a página é formatada para as dimensões da tela e é
+ possível navegar na documentação usando os mesmos comandos aceitos pelo
+ editor 
+\emph on
+vi
+\emph default
+.
+ Entre os comandos de navegação: q, encerra a consulta; u, página acima;
+ d ou ESPAÇO, página abaixo; ENTER linha abaixo e /, busca por palavra.
+ 
+\end_layout
+
+\begin_layout Standard
+Uma consulta mais completa, indicaria a seção desejada.
+ Os dois exemplos abaixo oferecem informações sobre tópicos de mesmo nome,
+ em seções diferentes.
+\end_layout
+
+\begin_layout LyX-Code
+$ man printf
+\end_layout
+
+\begin_layout LyX-Code
+$ man 3 printf
+\end_layout
+
+\begin_layout Standard
+O programador, ao buscar ajuda deve consultar primeiro a Seção 3.
+ 
+\end_layout
+
+\begin_layout Standard
+Para criar a documentação do seu próprio programa, basta fornecer um arquivo
+ texto no formato do utilitário 
+\emph on
+roff
+\emph default
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-3"
+
+\end_inset
+
+.
+ Dessa forma, cada programador contribui com código fonte, código executável
+ e também a documentação do seu sistema.
+\end_layout
+
+\begin_layout Section
+Metodologia
+\end_layout
+
+\begin_layout Standard
+Foram consultados o Google Livros e Acadêmico e a Consulta Múltipla da Bibliotec
+a Central Irmão José Otão.
+ A consulta foi: "UNIX man".
+\end_layout
+
+\begin_layout Section*
+Conclusão
+\end_layout
+
+\begin_layout Standard
+O comando 
+\emph on
+man
+\emph default
+ oferece acesso online às páginas do manual de programas do sistema operacional
+ UNIX e derivados.
+ A documentação é criada pelo próprio programador, como forma de comunicar
+ o uso correto do comando aos usuários.
+ 
+\end_layout
+
+\begin_layout Standard
+O sistema de documentação é uma das causas do sucesso na adoção e disseminação
+ do UNIX, em uma época em que havia pouca oportunidade de comunicação entre
+ os usuários.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+
+\end_inset
+
+PEEK, Jerry; POWERS, Shelley; O'REILLY, Tim, LOUKIDES, Mike.
+ UNIX Power Tootls.
+ O'Reilly, 3rd, 2003
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-2"
+
+\end_inset
+
+THE OPEN GROUP.
+ The Single UNIX Specification, Version 2.
+ http://pubs.opengroup.org/onlinepubs/7908799/, consulta em agosto de 2013.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-3"
+
+\end_inset
+
+NIXCRAFT.
+ HowTo: Linux/UNIX Create a Manpage.
+ http://www.cyberciti.biz/faq/linux-unix-creating-a-manpage/, consulta em
+ agosto de 2013.
+\end_layout
+
+\end_body
+\end_document
