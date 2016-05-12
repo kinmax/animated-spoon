@@ -6,8 +6,8 @@ int main ()
 	float x, raiz;
 
 	printf ("\nDigite o número: ");
-	scanf ("%f", & x);
-	raiz = sqrtf(x);
+	scanf ("%f", &x);
+	raiz = sqrt(x);
 	printf ("A raiz quadrada do número é: %f", raiz);
 	printf ("\n\n");
 
